@@ -1,0 +1,368 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+html{
+	padding-right: 0px;
+}
+body{
+	background-color:#ededed;
+	margin: 0px;
+	padding: 0px;
+}
+a{
+	color: black;
+	text-decoration: none;
+}
+h4 {
+	color: red;
+}
+h6{
+	margin-top:4px;
+}
+
+.container{
+	padding-top: 80px;
+	padding-right: 0px;
+	padding-left: 0px;
+
+}
+#allContainer{
+	padding-top: 0px;
+	position: sticky;
+}
+
+.row .intro{
+	margin: 50px;
+}
+
+.row {
+	background-color: white;
+	margin: 0px;
+}
+.cat{
+	width: 100%;
+	height: 300px;
+	margin: 0px auto;
+	top:16px;
+	z-index: -1;
+	background-image:url(../images/cat.gif);
+	background-size:10% auto;
+	position: absolute;
+	background-position: -20% 0px;
+	background-repeat: no-repeat;
+	animation: cat linear 12s infinite;
+	/*animation-fill-mode: forwards;*/
+	/*animation-direction: reverse;*/
+}
+.cat2{
+	width: 100%;
+	height: 300px;
+	margin: 0px auto;
+	top:16px;
+	z-index: -2;
+	background-image:url(../images/cat.gif);
+	background-size:10% auto;
+	position: absolute;
+	background-position: -20% 0px;
+	background-repeat: no-repeat;
+	animation: cat linear 12s infinite;
+	transform: rotateY(180deg);
+	animation-delay: 6s;
+}
+
+@keyframes cat {
+  0% {
+		background-position: -20% 0px;
+  }
+  100% {
+		background-position: 240% 0px;
+  }
+}
+
+.stars{
+	width: 100%;
+	height: 145px;
+	margin: 0px auto;
+	top: 0px;
+	z-index: -3;
+	background-image:url(../images/stars.jpg);
+	background-size:50% auto;
+	position: absolute;
+	background-position: -20% 0px;
+	background-repeat: repeat-x;
+	animation: stars linear 90s infinite;
+	display: none;
+}
+
+@keyframes stars{
+	from{
+		background-position: -20% 0px;
+	}
+	to{
+		background-position: 150% 0px;		
+	}
+}
+
+.contact a {
+	color: black;
+	text-decoration: none;
+	position: relative;	
+}
+.contact a::after{
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 2px;
+	background: currentColor;
+
+	transform: scaleX(0);
+	transform-origin: right;
+	transition: transform 250ms ease-in;	
+}
+
+.contact a:hover::after {
+	transform: scaleX(1);
+	transform-origin: left;
+}
+
+.picture{
+	display: block;
+ 	z-index: 2;
+ 	height: auto;
+ 	left: 45%;
+	width: 100%;
+	max-width: 160px;
+	border-radius: 100px;
+	border-style: solid;
+	border-width: 10px;
+	border-color: #ededed;
+	position: absolute;	
+	transition: max-width 1s, border-color 1s;
+}
+
+.picture:hover{
+	border-color: red;
+	max-width:180px;
+}
+.picture-scrolled{
+	display: block;
+ 	height: auto;
+ 	left: 45%;
+	width: 100%;
+	max-width: 160px;
+	border-radius: 100px;
+	border-style: solid;
+	border-width: 10px;
+	border-color: #ededed;
+	position: absolute;
+}
+.download{
+	font-color: red;
+	float: right;
+	font-size: 20px;
+	padding:10px;
+	text-decoration: none;
+}
+.download:hover{
+	text-decoration: none;
+}
+
+.skills {
+  text-align: right;
+  margin-left: 0px;
+  padding-left: 0px;
+  color: white;
+}
+
+.html {width: 100%; background-color: #f44336;}
+.php {width: 85%; background-color: #f44336;}
+.wp {width: 75%; background-color: #f44336;}
+.js {width: 75%; background-color: #f44336;}
+.ap {width: 70%; background-color: #f44336;}
+
+.nl {width: 80%; background-color: #2196F3;}
+.tr {width: 80%; background-color: #2196F3;}
+.en {width: 70%; background-color: #2196F3;}
+
+.skillbar {
+	width: 100%;
+	background-color: #ddd;
+}
+
+.fa{
+	color: red;
+	font-size:24px;
+}
+
+.btn {
+	font-size: 20px;
+}
+
+.btn:hover {
+	background-color: #ddd;
+}
+
+#nlbtn{
+	margin: 10px;
+  	font-size: 20px;
+}
+#enbtn{
+	margin: 10px;
+  	font-size: 20px;
+  	display: none;
+}
+#enText{
+	display:none;
+}
+
+#lightbtn{
+	margin:10px;
+}
+#darkbtn{
+	margin:10px;
+	display: none;
+}
+
+.dark-mode {
+	background-color: #202020;
+}
+.dark-mode .row{
+	background-color: black;
+	color: white;
+}
+.dark-mode a{
+	color: white;
+}
+.dark-mode .btn {
+	color: white;
+	background-color: black;
+}
+.dark-mode .btn:hover {
+	color: black;
+}
+.dark-mode .picture {
+	border-color: #202020;
+}
+.dark-mode .stars{
+	display: block;
+}
+.dark-mode .cat{
+	filter: invert(100%);
+}
+.dark-mode .cat2{
+	filter: invert(100%);
+}
+
+@media only screen and (min-width: 769px) {
+	.info2{
+		display: none;
+	}
+	.info3{
+		display: none;
+	}
+	.info1{
+		font-size: 16.5px;
+	}
+}
+@media only screen and (max-width: 1024px) {
+	.cat, .cat2{
+		background-size:15% auto;
+		top:5px;
+		animation: cat linear 10s infinite;
+	}
+	.cat2{
+		animation-delay: -5s;
+	}
+		@keyframes cat{
+		from{
+			background-position: -55% 0px;
+		}
+		to{
+			background-position: 300% 0px;
+		}
+	}
+}
+@media only screen and (max-width: 768px) {
+	.picture{
+    left: 40%;
+	}
+	.info1{
+		display: none;
+	}
+	.info2, .info3{
+		font-size: 16.5px;
+	}
+	.stars{
+		background-size:80% auto;
+		animation: stars linear 13s infinite;
+	}
+	.cat, .cat2{
+		background-size:20% auto;
+		top:5px;
+		animation: cat linear 10s infinite;
+	}
+	.cat2{
+		animation-delay: -4s;
+	}
+	@keyframes cat{
+		from{
+			background-position: -55% 0px;
+		}
+		to{
+			background-position: 400% 0px;
+		}
+	}
+}
+@media only screen and (max-width: 480px) {
+	.picture{
+    left: 30%;
+	}
+	.info1{
+		display: none;
+	}
+	#downloadbtn{
+		font-size:0px;
+		padding:9px;
+	}
+	.cat, .cat2{
+		background-size:30% auto;
+		top:25px;
+		animation: cat linear 8s infinite;
+	}
+	.cat2{
+		animation-delay: -3.5s;
+	}
+}
+@media only screen and (max-width: 375px) {
+	.cat, .cat2{
+		background-size:30% auto;
+		top:35px;
+		animation: cat linear 8s infinite;
+	}
+	.cat2{
+		animation-delay: -3.5s;
+	}
+}
+@media only screen and (max-width: 320px) {
+	.picture{
+    left: 20%;
+	}
+	.cat, .cat2{
+		background-size:30% auto;
+		top:50px;
+		animation: cat linear 8s infinite;	
+	}
+	.cat2{
+		animation-delay: -3.5s;
+	}
+}
+
+/*@media only screen and (max-width: 280px) {
+	.picture{
+    left: 10%;
+	}
+}*/
