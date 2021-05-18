@@ -23,16 +23,17 @@ h6{
 }
 
 .container{
-	padding-top: 80px;
+	/*padding-top: 80px;*/
 	padding-right: 0px;
 	padding-left: 0px;
-
 }
 #allContainer{
 	padding-top: 0px;
 	position: sticky;
 }
-
+#nlText{
+	z-index: -5;
+}
 .row .intro{
 	margin: 50px;
 }
@@ -41,9 +42,33 @@ h6{
 	background-color: white;
 	margin: 0px;
 }
+.sky{
+	width: 100%;
+	height: 145px;
+	margin: 0px auto;
+	top: 0px;
+	z-index:0;
+	background-image:url(../images/sky.png);
+	background-size:50% auto;
+	position: relative;
+	background-position: -20% 0px;
+	background-repeat: repeat-x;
+	animation: sky linear 90s infinite;
+	opacity: 1;
+	/*display: none;*/
+}
+
+@keyframes sky{
+	from{
+		background-position: -20% 0px;
+	}
+	to{
+		background-position: 150% 0px;		
+	}
+}
 .cat{
 	width: 100%;
-	height: 300px;
+	height: 145px;
 	margin: 0px auto;
 	top:16px;
 	z-index: -1;
@@ -58,10 +83,10 @@ h6{
 }
 .cat2{
 	width: 100%;
-	height: 300px;
+	height: 145px;
 	margin: 0px auto;
 	top:16px;
-	z-index: -2;
+	z-index: -1;
 	background-image:url(../images/cat.gif);
 	background-size:10% auto;
 	position: absolute;
@@ -70,6 +95,9 @@ h6{
 	animation: cat linear 12s infinite;
 	transform: rotateY(180deg);
 	animation-delay: 6s;
+
+	/*perspective: 900000px;*/
+	/*backface-visibility: block;*/
 }
 
 @keyframes cat {
@@ -79,30 +107,6 @@ h6{
   100% {
 		background-position: 240% 0px;
   }
-}
-
-.stars{
-	width: 100%;
-	height: 145px;
-	margin: 0px auto;
-	top: 0px;
-	z-index: -3;
-	background-image:url(../images/stars.jpg);
-	background-size:50% auto;
-	position: absolute;
-	background-position: -20% 0px;
-	background-repeat: repeat-x;
-	animation: stars linear 90s infinite;
-	display: none;
-}
-
-@keyframes stars{
-	from{
-		background-position: -20% 0px;
-	}
-	to{
-		background-position: 150% 0px;		
-	}
 }
 
 .contact a {
@@ -131,11 +135,12 @@ h6{
 
 .picture{
 	display: block;
- 	z-index: 2;
- 	height: auto;
+ 	z-index: 5;
  	left: 45%;
+/* 	margin-left: auto;
+ 	margin-right:auto;*/
 	width: 100%;
-	max-width: 160px;
+	max-width: 180px;
 	border-radius: 100px;
 	border-style: solid;
 	border-width: 10px;
@@ -145,8 +150,7 @@ h6{
 }
 
 .picture:hover{
-	border-color: red;
-	max-width:180px;
+	max-width:200px;
 }
 .picture-scrolled{
 	display: block;
@@ -164,7 +168,7 @@ h6{
 	font-color: red;
 	float: right;
 	font-size: 20px;
-	padding:10px;
+	margin:10px;
 	text-decoration: none;
 }
 .download:hover{
@@ -242,19 +246,24 @@ h6{
 	background-color: black;
 }
 .dark-mode .btn:hover {
-	color: black;
+	background-color: #202020;
 }
 .dark-mode .picture {
 	border-color: #202020;
 }
-.dark-mode .stars{
+
+/*.dark-mode .sky{
 	display: block;
-}
+}*/
 .dark-mode .cat{
 	filter: invert(100%);
 }
 .dark-mode .cat2{
 	filter: invert(100%);
+}
+.dark-mode .sky{
+	background-image:url(../images/stars.jpg);
+	/*z-index: -5;*/
 }
 
 @media only screen and (min-width: 769px) {
@@ -296,9 +305,9 @@ h6{
 	.info2, .info3{
 		font-size: 16.5px;
 	}
-	.stars{
+	.sky{
 		background-size:80% auto;
-		animation: stars linear 13s infinite;
+		animation: sky linear 12s infinite;
 	}
 	.cat, .cat2{
 		background-size:20% auto;
@@ -315,6 +324,16 @@ h6{
 		to{
 			background-position: 400% 0px;
 		}
+	}
+}
+@media only screen and (max-width: 540px) {
+		.cat, .cat2{
+		background-size:20% auto;
+		top:41px;
+		animation: cat linear 10s infinite;
+	}
+		.cat2{
+		animation-delay: -4s;
 	}
 }
 @media only screen and (max-width: 480px) {
@@ -347,6 +366,16 @@ h6{
 		animation-delay: -3.5s;
 	}
 }
+@media only screen and (max-width: 360px) {
+	.cat, .cat2{
+		background-size:30% auto;
+		top:41px;
+		animation: cat linear 8s infinite;
+	}
+	.cat2{
+		animation-delay: -3.5s;
+	}
+}
 @media only screen and (max-width: 320px) {
 	.picture{
     left: 20%;
@@ -354,6 +383,23 @@ h6{
 	.cat, .cat2{
 		background-size:30% auto;
 		top:50px;
+		animation: cat linear 8s infinite;	
+	}
+	.cat2{
+		animation-delay: -3.5s;
+	}
+	.sky{
+		background-size:90% auto;
+	}
+}
+
+@media only screen and (max-width: 280px) {
+	.picture{
+    left: 20%;
+	}
+	.cat, .cat2{
+		background-size:30% auto;
+		top:63px;
 		animation: cat linear 8s infinite;	
 	}
 	.cat2{
