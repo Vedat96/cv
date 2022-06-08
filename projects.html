@@ -19,7 +19,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<meta name= "description" content="Dit is een website gemaakt door Vedat Aydin. "/>
+	<meta name= "description" content="Deze website is gemaakt door Vedat Aydin. "/>
 	<meta name= "keywords" content="Vedat, Aydin, CV, webdeveloper, Amsterdam, Nederland, contact, skills, html, css, javascript, php, laravel, wordpress, mysql, roc, rocva, copavo, mgt, applicatie ontwikkelaar"/>
 	<meta name= "author" content="Vedat Aydin"/>
 	<meta charset="utf-8"/>
@@ -34,34 +34,209 @@
 		<!-- <img src="cat.gif" class="cat"> -->
 
 	<div class="container" id="allContainer">
-		<div class="stars"></div>
-		<div class="cat"></div>
-		<div class="cat2"></div>
 
 
-		<a class="download" href="cv.pdf" download>
-			<button class="btn btn-light" id="downloadbtn"><i class="fa fa-download"></i> Download</button>
-		</a>
-		<a class="download" href="index.html">
-			<button class="btn btn-light" id="downloadbtn">CV</button>
-		</a>
-		<button class="btn btn-light" id="enbtn" onclick="toggleLanguage('Nederlands')">EN</buttton>
-	    <button class="btn btn-light" id="nlbtn" onclick="toggleLanguage('English')">NL</button>
+
+		<!-- <button class="btn btn-light" id="enbtn" onclick="toggleLanguage('Nederlands')">EN</buttton>
+	    <button class="btn btn-light" id="nlbtn" onclick="toggleLanguage('English')">NL</button> -->
 
 	    <button class="btn btn-light" id="lightbtn" onclick="toggleMode('Dark')"><i class="fa fa-sun-o"></i></button>
 	    <button class="btn btn-light" id="darkbtn" onclick="toggleMode('Light')"><i class="fa fa-moon-o"></i></button>
-		<img src="images/pf.png" class="picture" alt="Vedat Aydin" >
+		<button class="btn btn-light"><a href="/"> CV </a></button>
 
-		<div class="container" id="nlText">
-			<div class="row">
-				<div class="intro"></div>
-				<div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-8">
-					x
-				</div>
-				<div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-4" id="x">
-					y
-				</div>
-			</div>
+		<!-- <div class="container" id="nlText"> -->
+			
+
+
+		<div class="album py-5 bg-light">
+		    <div class="container">
+		    	<h2 style="text-align: center;">Mijn projecten</h2>
+		      	<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+		        <div class="col">
+		          <div class="card shadow-sm">
+		          	<div class="card-header"> BMW Recycling
+		            </div>
+		            <img src="images/bmwrecycling.png">
+		            
+		            <div class="card-body">
+		              <p class="card-text">Stage opdracht</p>
+		              <ul class="list-group list-group-flush">
+	                    <li class="list-group-item">HTML</li>
+	                    <li class="list-group-item">CSS</li>
+	                    <li class="list-group-item">Javascript</li>
+	                </ul>
+		              <div class="d-flex justify-content-between align-items-center">
+		                <div class="btn-group">
+		                  <a href="bmwrecycling"><button type="button" class="btn btn-sm btn-outline-secondary">Bekijk Project</button></a>
+		                  <a href="https://github.com/Vedat96/bmwrecycling"><button type="button" class="btn btn-sm btn-outline-secondary">Bekijk Code</button></a>
+		                </div>
+		              </div>
+		            </div>
+		          </div>
+		        </div>
+		        <div class="col">
+		          <div class="card shadow-sm">
+		          	<div class="card-header"> Thuisbezorgd
+		            </div>
+		            <p>coming soon</p>
+		            <!-- <img src="images/thuisbezorgd.png"> -->
+		            
+		            <div class="card-body">
+		              <p class="card-text">School opdracht</p>
+		              <ul class="list-group list-group-flush">
+	                    <li class="list-group-item">HTML</li>
+	                    <li class="list-group-item">CSS</li>
+	                    <li class="list-group-item">Laravel</li>
+	                </ul>
+		              <div class="d-flex justify-content-between align-items-center">
+		                <div class="btn-group">
+		                  <a href="thuisbezorgd"><button type="button" class="btn btn-sm btn-outline-secondary">Bekijk Project</button></a>
+		                  <a href="https://github.com/Vedat96/thuisbezorgd"><button type="button" class="btn btn-sm btn-outline-secondary">Bekijk Code</button></a>
+		                </div>
+		              </div>
+		            </div>
+		          </div>
+		        </div>		        
+		        <div class="col">
+		          <div class="card shadow-sm">
+		          	<div class="card-header"> Webshop
+		            </div>
+		            <!-- <img src="images/bmwrecycling.png"> -->
+		            <p>coming soon</p>
+
+		            <div class="card-body">
+		              <p class="card-text">School opdracht</p>
+		              <ul class="list-group list-group-flush">
+	                    <li class="list-group-item">HTML</li>
+	                    <li class="list-group-item">CSS</li>
+	                    <li class="list-group-item">PHP</li>
+	                </ul>
+		              <div class="d-flex justify-content-between align-items-center">
+		                <div class="btn-group">
+		                  <a href="webshop"><button type="button" class="btn btn-sm btn-outline-secondary">Bekijk Project</button></a>
+		                  <a href="https://github.com/Vedat96/webshop"><button type="button" class="btn btn-sm btn-outline-secondary">Bekijk Code</button></a>
+		                </div>
+		              </div>
+		            </div>
+		          </div>
+		        </div>		        
+		        <div class="col">
+		          <div class="card shadow-sm">
+		          	<div class="card-header"> Dagboek
+		            </div>
+		            <img src="images/dagboek.png">
+		            
+		            <div class="card-body">
+		              <p class="card-text">Stage opdracht</p>
+		              <ul class="list-group list-group-flush">
+	                    <li class="list-group-item">HTML</li>
+	                    <li class="list-group-item">CSS</li>
+	                    <li class="list-group-item">PHP</li>
+	                </ul>
+		              <div class="d-flex justify-content-between align-items-center">
+		                <div class="btn-group">
+		                  <a href="dagboek"><button type="button" class="btn btn-sm btn-outline-secondary">Bekijk Project</button></a>
+		                  <a href="https://github.com/Vedat96/dagboek"><button type="button" class="btn btn-sm btn-outline-secondary">Bekijk Code</button></a>
+		                </div>
+		              </div>
+		            </div>
+		          </div>
+		        </div>		        
+		        <div class="col">
+		          <div class="card shadow-sm">
+		          	<div class="card-header"> Bowlingmanager
+		            </div>
+		            <img src="images/bowlingmanager.png">
+		            
+		            <div class="card-body">
+		              <p class="card-text">School opdracht</p>
+		              <ul class="list-group list-group-flush">
+	                    <li class="list-group-item">HTML</li>
+	                    <li class="list-group-item">CSS</li>
+	                    <li class="list-group-item">Javascript</li>
+	                </ul>
+		              <div class="d-flex justify-content-between align-items-center">
+		                <div class="btn-group">
+		                  <a href="bowlingmanager"><button type="button" class="btn btn-sm btn-outline-secondary">Bekijk Project</button></a>
+		                  <a href="https://github.com/Vedat96/bowlingmanager"><button type="button" class="btn btn-sm btn-outline-secondary">Bekijk Code</button></a>
+		                </div>
+		              </div>
+		            </div>
+		          </div>
+		        </div>		        
+		        <div class="col">
+		          <div class="card shadow-sm">
+		          	<div class="card-header"> Naruto
+		            </div>
+		            <img src="images/naruto.png">
+		            
+		            <div class="card-body">
+		              <p class="card-text">Spelletje die ik gemaakt heb in mijn vrije tijd</p>
+		              <ul class="list-group list-group-flush">
+	                    <li class="list-group-item">HTML</li>
+	                    <li class="list-group-item">CSS</li>
+	                    <li class="list-group-item">Javascript</li>
+	                </ul>
+		              <div class="d-flex justify-content-between align-items-center">
+		                <div class="btn-group">
+		                  <a href="naruto"><button type="button" class="btn btn-sm btn-outline-secondary">Bekijk Project</button></a>
+		                  <a href="https://github.com/Vedat96/naruto"><button type="button" class="btn btn-sm btn-outline-secondary">Bekijk Code</button></a>
+		                </div>
+		              </div>
+		            </div>
+		          </div>
+		        </div>
+		        <div class="col">
+		          <div class="card shadow-sm">
+		          	<div class="card-header"> Techsolution
+		            </div>
+		            <img src="images/techsolution.png">
+		            
+		            <div class="card-body">
+		              <p class="card-text">Website voor klant</p>
+		              <ul class="list-group list-group-flush">
+	                    <li class="list-group-item">HTML</li>
+	                    <li class="list-group-item">CSS</li>
+	                    <li class="list-group-item">Javascript</li>
+	                    <li class="list-group-item">Laravel</li>
+	                   </ul>
+		              <div class="d-flex justify-content-between align-items-center">
+		                <div class="btn-group">
+		                  <a href="https://techso.vedataydin.nl/"><button type="button" class="btn btn-sm btn-outline-secondary">Bekijk Project</button></a>
+		                  <!-- <a href="https://github.com/Vedat96/bowlingmanager"><button type="button" class="btn btn-sm btn-outline-secondary">Bekijk Code</button></a> -->
+		                </div>
+		              </div>
+		            </div>
+		          </div>
+		        </div>		
+		        <div class="col">
+		          <div class="card shadow-sm">
+		          	<div class="card-header"> Gaskoning
+		            </div>
+		            <img src="images/gaskoning.png">
+		            
+		            <div class="card-body">
+		              <p class="card-text">Website voor klant</p>
+		              <ul class="list-group list-group-flush">
+	                    <li class="list-group-item">HTML</li>
+	                    <li class="list-group-item">CSS</li>
+	                    <li class="list-group-item">Javascript</li>
+	                </ul>
+		              <div class="d-flex justify-content-between align-items-center">
+		                <div class="btn-group">
+		                  <a href="gaskoning"><button type="button" class="btn btn-sm btn-outline-secondary">Bekijk Project</button></a>
+		                  <!-- <a href="https://github.com/Vedat96/bowlingmanager"><button type="button" class="btn btn-sm btn-outline-secondary">Bekijk Code</button></a> -->
+		                </div>
+		              </div>
+		            </div>
+		          </div>
+		        </div>		
+		        
+
+		    
+		    </div>
+		  </div>
 		</div>
 	<script src="js/main.js"></script>
 </body>
